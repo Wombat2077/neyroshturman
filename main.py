@@ -7,6 +7,7 @@ import asyncio
 import vk_api.bot_longpoll as lp
 from vk_api.bot_longpoll import VkBotMessageEvent
 import logging
+import json
 
 
 
@@ -41,7 +42,11 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "chat_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                'reply_to': message.message["conversation_message_id"]
+                "forward" : json.dump({
+                    "peer_id" : message["peer_id"],
+                    "conversation_message_ids " : [message["conversation_message_id"]],
+                    "is_reply" : 1
+                })
             }
             )
     else:
@@ -51,7 +56,11 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "user_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                'reply_to': message.message["conversation_message_id"]
+                "forward" : json.dump({
+                    "peer_id" : message["peer_id"],
+                    "conversation_message_ids " : [message["conversation_message_id"]],
+                    "is_reply" : 1
+                })
             }
             )
     
