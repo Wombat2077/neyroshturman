@@ -41,7 +41,7 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "chat_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                'reply_to': message.message["id"]
+                'reply_to': message.message["conversation_message_id"]
             }
             )
     else:
