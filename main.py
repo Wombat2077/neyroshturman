@@ -64,7 +64,7 @@ async def main():
                     await send_message(event)
                     logging.info()
         except Exception as e:
-            logging.error("Error", e, event)
+            logging.error("Error", str(e), event)
             
         
 print("starting")
