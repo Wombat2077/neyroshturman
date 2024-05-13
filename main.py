@@ -43,7 +43,7 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
                 "forward" : json.dump({
-                    "peer_id" : message["peer_id"],
+                    "peer_id" : message.message["peer_id"],
                     "conversation_message_ids " : [message.message["conversation_message_id"]],
                     "is_reply" : 1
                 })
@@ -57,7 +57,7 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
                 "forward" : json.dump({
-                    "peer_id" : message["peer_id"],
+                    "peer_id" : message.message["peer_id"],
                     "conversation_message_ids " : [message.message["conversation_message_id"]],
                     "is_reply" : 1
                 })
