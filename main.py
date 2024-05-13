@@ -51,7 +51,7 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "user_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                'reply_to': message.message["id"]
+                'reply_to': message.message["conversation_message_id"]
             }
             )
     
@@ -62,6 +62,7 @@ async def main():
             for event in longpoll.listen():
                 if event.message['text'] != 0:
                     await send_message(event)
+                    logging.info()
         except Exception as e:
             logging.error("Error", e, event)
             
