@@ -61,7 +61,7 @@ async def main():
             event: VkBotMessageEvent
             for event in longpoll.listen():
                 if event.message['text'] != 0:
-                    await send_message()
+                    await send_message(event)
         except Exception as e:
             logging.error("Error", e, event)
             
