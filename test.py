@@ -9,7 +9,7 @@ async def main():
     me = await client.get_me()
 
     async with await client.connect() as chat:
-        new, answer = await chat.new_chat(
+        new, answer = await chat.get_chat(
             char, me.id
         )
 
