@@ -16,7 +16,7 @@ bot = vk_api.VkApi(token=os.getenv("VK_TOKEN"))
 longpoll = lp.VkBotLongPoll(vk=bot, group_id="214416249")
 logging.basicConfig(filename='logs.log', level=logging.DEBUG)
 chats_with_memory = {
-    2000000002 : "0cedc47f-86ac-4fe9-835d-ecab0eb26a53",
+    2 : "0cedc47f-86ac-4fe9-835d-ecab0eb26a53",
 }
 
 
@@ -27,15 +27,17 @@ async def get_answer(text: str, chat_id=None):
     client = aiocai.Client(os.getenv("TOKEN"))
 
     me = await client.get_me()
-    if(chat_id):
-        async with await client.connect() as chat:
+    
+    async with await client.connect() as chat:
+        if(chat_id == None):
             new, answer = await chat.new_chat(
-                char, me.id
+            char, me.id
             )
-        chat_id = new.chat_id
-    message = await chat.send_message(
-        char, chat_id, text
-    )
+            return message.text    
+        chat_id = chat_id
+        message = await chat.send_message(
+            char, chat_id, text
+        )
     return message.text
 async def send_message(message: VkBotMessageEvent) -> None:
     global chats_with_memory
@@ -47,11 +49,11 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "chat_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                "forward" : {
+                "forward" : json.dumps({
                     "peer_id" : message.message["peer_id"],
                     "conversation_message_ids " : [message.message["conversation_message_id"]],
                     "is_reply" : 1
-                }
+                })
             }
             )
     else:
@@ -61,11 +63,11 @@ async def send_message(message: VkBotMessageEvent) -> None:
                 "user_id" : message.chat_id,
                 "message" : answer,
                 "random_id" : rd.randint(0, 10000000),
-                "forward" : {
+                "forward" : json.dumps({
                     "peer_id" : message.message["peer_id"],
                     "conversation_message_ids " : [message.message["conversation_message_id"]],
                     "is_reply" : 1
-                }
+                })
             }
             )
     
