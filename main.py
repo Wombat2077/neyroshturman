@@ -16,7 +16,7 @@ bot = vk_api.VkApi(token=os.getenv("VK_TOKEN"))
 longpoll = lp.VkBotLongPoll(vk=bot, group_id="214416249")
 logging.basicConfig(filename='logs.log', level=logging.DEBUG)
 chats_with_memory = {
-    2 : "0cedc47f-86ac-4fe9-835d-ecab0eb26a53",
+    2 : "f9536944-3562-4500-a8c0-71ac4426d30e",
 }
 
 
