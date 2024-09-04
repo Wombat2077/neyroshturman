@@ -843,3 +843,185 @@ DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_che
 DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzE1NzYxOTI4MjIyMjAwODkxfQ.QliYfWrpVf6waq38Xu53XaNv1tQlJTZOfs-w-R9fNlbayFBojGgwBs_5FjTg_zksLk6KDJC3zt3JskBcQVweBw&ts=2134&wait=25 HTTP/1.1" 200 28
 DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzE1NzYxOTI4MjIyMjAwODkxfQ.QliYfWrpVf6waq38Xu53XaNv1tQlJTZOfs-w-R9fNlbayFBojGgwBs_5FjTg_zksLk6KDJC3zt3JskBcQVweBw&ts=2134&wait=25 HTTP/1.1" 200 28
 DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzE1NzYxOTI4MjIyMjAwODkxfQ.QliYfWrpVf6waq38Xu53XaNv1tQlJTZOfs-w-R9fNlbayFBojGgwBs_5FjTg_zksLk6KDJC3zt3JskBcQVweBw&ts=2134&wait=25 HTTP/1.1" 200 28
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lp.vk.com:443
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMjE0Nzc1NzMzOTM2fQ.TZcylqi4lAh1FPvSnCAvhwwLQi0LdM8216RE2gBZp6yx_nI0RHzzQXIS9TcpNEXFF5LGO4EX3SG-KFIS5ULoAQ&ts=4726&wait=25 HTTP/1.1" 200 635
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: PaSehxXfKmxOZqu3w2eZZQ==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:03:44 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: avm+5EUgaPqDswiPhjXyArxFr8E=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=CMPxoKSNvqLBAxAD; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:03:44 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=0wzCtsLkf85FrnrdKzMDS47_7FV2E0WCrkzpK.mclME-1725458624-1.0.1.1-1TEi_FIvTzRi_iznwqVqlE3Z5AoT8Q0K7PFz2S5A3D4TsQcuemVam_KGU3PhU4ItJUTKAMHFSJRyxmUb1xhRxA; path=/; expires=Wed, 04-Sep-24 14:33:44 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde8652cdde5efe-ARN
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: hopK7gxGCucc696/tSxKBg==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:03:46 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: FttYAcd4IN4KwQj5au86bwcYbrA=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=CKvygozunPKeAhAD; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:03:46 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=K7cRpQXPPrZ1B_wOcsKdNBh2eqtX6N_jNAsutXIHjpY-1725458626-1.0.1.1-2145kCP1fMa0ByLUZvNgq1Z3u4qHrYDakguZU96yUoP_p5dNaZYyu0HrUgA3nuwWyPSm1JcgMPa_3A7Ydjjt8w; path=/; expires=Wed, 04-Sep-24 14:33:46 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde865dac331d94-FRA
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"command": "create_chat", "payload": {"chat": ..."with_greeting": true}}' [276 bytes]
+DEBUG:websockets.client:< TEXT '{"chat": {"chat_id": "5bb11c25-266c-493a-a65f-7..."create_chat_response"}' [320 bytes]
+DEBUG:websockets.client:< TEXT '{"turn": {"turn_key": {"chat_id": "5bb11c25-266... "command": "add_turn"}' [3153 bytes]
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:< CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMjE0Nzc1NzMzOTM2fQ.TZcylqi4lAh1FPvSnCAvhwwLQi0LdM8216RE2gBZp6yx_nI0RHzzQXIS9TcpNEXFF5LGO4EX3SG-KFIS5ULoAQ&ts=4727&wait=25 HTTP/1.1" 200 28
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMjE0Nzc1NzMzOTM2fQ.TZcylqi4lAh1FPvSnCAvhwwLQi0LdM8216RE2gBZp6yx_nI0RHzzQXIS9TcpNEXFF5LGO4EX3SG-KFIS5ULoAQ&ts=4727&wait=25 HTTP/1.1" 200 28
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMjE0Nzc1NzMzOTM2fQ.TZcylqi4lAh1FPvSnCAvhwwLQi0LdM8216RE2gBZp6yx_nI0RHzzQXIS9TcpNEXFF5LGO4EX3SG-KFIS5ULoAQ&ts=4727&wait=25 HTTP/1.1" 200 635
+DEBUG:websockets.client:< PING 5d 51 e7 4b [binary, 4 bytes]
+DEBUG:websockets.client:> PONG 5d 51 e7 4b [binary, 4 bytes]
+DEBUG:websockets.client:% sending keepalive ping
+DEBUG:websockets.client:> PING ',4rd' [text, 4 bytes]
+DEBUG:websockets.client:< PONG ',4rd' [text, 4 bytes]
+DEBUG:websockets.client:% received keepalive pong
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: mdMlwjm9jZa71hJuRh0+iA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:04:45 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: yPYl+ufkY4tDKhBasNdlBbs3vAY=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=CJev2cSjsv-6DhAD; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:04:45 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=GgyxHuEg2BgF4r.g.5o3v68PMuTppCe9M7YJDABYH_E-1725458685-1.0.1.1-RMavkYHwcer2Hi5jJcnFkSZIn5EFWpZaeMfIuGZTqezqKq6NCpD0VYwCbZpM_8ZvCk9ivTfmBRc_MoP1Jr0mGg; path=/; expires=Wed, 04-Sep-24 14:34:45 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde87d17a871d96-FRA
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: wbVuhog8c4o7Cso29ksBHA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:04:46 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: tpvYa+HIt2PI72k9qkCzKsVgINY=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=CN3KtNTP3_Ob3AEQAw; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:04:46 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=EG10GqQt7nFqjdwoxFcPbUNKd75Jg3rFv8dvyLkYyr0-1725458686-1.0.1.1-EtiYCfkEyx44T5MENR4qtZ_blDGnabK3pJRiryaMVmCenhVOew1S_zTDv5pcXcTsOJGUXP2qHVdO.f0QrDz78w; path=/; expires=Wed, 04-Sep-24 14:34:46 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde87d719251da8-FRA
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"command": "create_chat", "payload": {"chat": ..."with_greeting": true}}' [276 bytes]
+DEBUG:websockets.client:< TEXT '{"chat": {"chat_id": "84ff4044-8883-442e-b6dd-e..."create_chat_response"}' [320 bytes]
+DEBUG:websockets.client:< TEXT '{"turn": {"turn_key": {"chat_id": "84ff4044-888... "command": "add_turn"}' [3153 bytes]
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:< CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:asyncio:Using selector: SelectSelector
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): lp.vk.com:443
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMzIwODI1Nzg1MzQ1fQ.8Fzbqprdq7at1E5BQNvD4S98mg9qSg0L4qMfZliMFTYYQlSdE84Dgwl5x9kHwjTH_9VfIsi4zEn0PCpxb0ohAw&ts=4728&wait=25 HTTP/1.1" 200 635
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: aEEf0zbeQUV2MIaKewpYug==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:05:31 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: 64OmN+2FKqHe8trozPjxLZMWr9M=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=COeZ7pjhx4WDKRAD; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:05:31 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=TisyQaxfSaQS0FmvEqr60CoADWduG3aUBKJql4VR3fQ-1725458731-1.0.1.1-8jeg7CRcpF9rDh_DM1Lh9_gLD4ZDHW_8xkjaHR0_t4wBS2cUvrO3O0I05B_0GvxJDfMmUs9HYwfAZN5rIIbJjg; path=/; expires=Wed, 04-Sep-24 14:35:31 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde88ee8c4f82c7-ARN
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:= connection is CONNECTING
+DEBUG:websockets.client:> GET /ws/ HTTP/1.1
+DEBUG:websockets.client:> Host: neo.character.ai
+DEBUG:websockets.client:> Upgrade: websocket
+DEBUG:websockets.client:> Connection: Upgrade
+DEBUG:websockets.client:> Sec-WebSocket-Key: //btuL2Kg+9awOvHsTnmRA==
+DEBUG:websockets.client:> Sec-WebSocket-Version: 13
+DEBUG:websockets.client:> Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+DEBUG:websockets.client:> Cookie: HTTP_AUTHORIZATION="Token 240f5bb373413d1b255f9b293238b3ff03420f27"
+DEBUG:websockets.client:> User-Agent: Python/3.12 websockets/12.0
+DEBUG:websockets.client:< HTTP/1.1 101 Switching Protocols
+DEBUG:websockets.client:< Date: Wed, 04 Sep 2024 14:05:32 GMT
+DEBUG:websockets.client:< Connection: upgrade
+DEBUG:websockets.client:< sec-websocket-accept: 6cMmcVd5rTT9p8KR/dbRgGIKImg=
+DEBUG:websockets.client:< sec-websocket-extensions: permessage-deflate
+DEBUG:websockets.client:< Via: 1.1 google
+DEBUG:websockets.client:< Set-Cookie: GCLB=CP6xs6r1i_rzLRAD; path=/; HttpOnly; expires=Thu, 05-Sep-2024 14:05:32 GMT
+DEBUG:websockets.client:< Upgrade: websocket
+DEBUG:websockets.client:< Alt-Svc: h3=":443"; ma=86400
+DEBUG:websockets.client:< CF-Cache-Status: DYNAMIC
+DEBUG:websockets.client:< Set-Cookie: __cf_bm=yFqFBaBI4zdcOBMTSRgukjbvmZADaI7iSWKee3TLNDI-1725458732-1.0.1.1-JsACHOrU6SstX2xtcfL0.saMgEz7Qv8LGVTBhOdvmexQP95LIlxnwZmiLaUIWdoHpXap5BvBDg5IZjTbOMxgvg; path=/; expires=Wed, 04-Sep-24 14:35:32 GMT; domain=.character.ai; HttpOnly; Secure; SameSite=None
+DEBUG:websockets.client:< Server: cloudflare
+DEBUG:websockets.client:< CF-RAY: 8bde88f3ac749915-ARN
+DEBUG:websockets.client:= connection is OPEN
+DEBUG:websockets.client:> TEXT '{"command": "create_chat", "payload": {"chat": ..."with_greeting": true}}' [276 bytes]
+DEBUG:websockets.client:< TEXT '{"chat": {"chat_id": "2d413985-f618-46ba-a206-e..."create_chat_response"}' [320 bytes]
+DEBUG:websockets.client:< TEXT '{"turn": {"turn_key": {"chat_id": "2d413985-f61... "command": "add_turn"}' [3153 bytes]
+DEBUG:websockets.client:= connection is CLOSING
+DEBUG:websockets.client:> CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:< CLOSE 1000 (OK) [2 bytes]
+DEBUG:websockets.client:= connection is CLOSED
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMzIwODI1Nzg1MzQ1fQ.8Fzbqprdq7at1E5BQNvD4S98mg9qSg0L4qMfZliMFTYYQlSdE84Dgwl5x9kHwjTH_9VfIsi4zEn0PCpxb0ohAw&ts=4729&wait=25 HTTP/1.1" 200 28
+DEBUG:urllib3.connectionpool:https://lp.vk.com:443 "GET /whp/214416249?act=a_check&key=eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJxdWV1ZV9pZCI6IjIxNDQxNjI0OSIsInVudGlsIjoxNzI1NDYyMzIwODI1Nzg1MzQ1fQ.8Fzbqprdq7at1E5BQNvD4S98mg9qSg0L4qMfZliMFTYYQlSdE84Dgwl5x9kHwjTH_9VfIsi4zEn0PCpxb0ohAw&ts=4729&wait=25 HTTP/1.1" 200 28

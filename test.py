@@ -1,27 +1,25 @@
 from characterai import aiocai
 import asyncio
+import dotenv
+import os
+dotenv.load_dotenv(".env")
 
-async def main():
-    char = input('CHAR ID: ')
+async def get_answer(text: str, chat_id=None):
+    char = 'nSgypqXQwOgl1PmBs2AFcCKUezG1Lgjb23i66vOtFdM'
 
-    client = aiocai.Client('240f5bb373413d1b255f9b293238b3ff03420f27')
+    client = aiocai.Client(os.getenv("TOKEN"))
 
     me = await client.get_me()
-
+    
     async with await client.connect() as chat:
-        new, answer = await chat.get_chat(
+        if(chat_id == None):
+            new, answer = await chat.new_chat(
             char, me.id
-        )
-
-        print(f'{answer.name}: {answer.text}')
-        
-        while True:
-            text = input('YOU: ')
-
-            message = await chat.send_message(
-                char, new.chat_id, text
             )
+            return answer.text    
+        message = await chat.send_message(
+            char, chat_id, text
+        )
+    return message.text
 
-            print(f'{message.name}: {message.text}')
-
-asyncio.run(main())
+asyncio.run(get_answer("проснись, я взываю к тебе"))
