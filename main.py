@@ -33,7 +33,7 @@ async def get_answer(text: str, chat_id=None):
             new, answer = await chat.new_chat(
             char, me.id
             )
-          
+            chat_id = new.chat_id   
         message = await chat.send_message(
             char, chat_id, text
         )
